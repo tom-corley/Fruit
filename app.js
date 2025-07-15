@@ -1,7 +1,7 @@
 // Import express library and create an express application instance
 const express = require('express')
 const app = express();
-const cors = requre('cors')
+const cors = require('cors')
 
 // Global Middleware:
 
