@@ -1,27 +1,29 @@
 {
-  "name": "fruit_express",
+  "name": "fruit",
   "version": "1.0.0",
   "description": "",
-  "main": "app.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "nodemon index.js"
-  },
   "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "type": "commonjs",
-  "dependencies": {
-    "express": "^5.1.0",
-    "nodemon": "^3.1.10"
+  "homepage": "https://github.com/tom-corley/Fruit#readme",
+  "bugs": {
+    "url": "https://github.com/tom-corley/Fruit/issues"
   },
-  "devDependencies": {},
   "repository": {
     "type": "git",
     "url": "git+https://github.com/tom-corley/Fruit.git"
   },
-  "bugs": {
-    "url": "https://github.com/tom-corley/Fruit/issues"
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon index.js",
+    "start": "node index.js"
   },
-  "homepage": "https://github.com/tom-corley/Fruit#readme"
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^17.2.0",
+    "express": "^5.1.0",
+    "nodemon": "^3.1.10"
+  }
 }
