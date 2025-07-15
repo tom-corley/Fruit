@@ -1,6 +1,7 @@
 // Import express library and create an express application instance
 const express = require('express')
 const app = express();
+const cors = requre('cors')
 
 // Global Middleware:
 
@@ -18,6 +19,7 @@ app.use((req, res, next) => {
     res.setHeader('X-Powered-By', 'Learning Express with Tom');
     next();
 })
+app.use(cors())
 
 // Routing
 const fruitRoute = require("./routes/fruitRoutes")
