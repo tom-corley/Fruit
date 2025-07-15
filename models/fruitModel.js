@@ -33,6 +33,7 @@ class Fruit {
               newFruit["id"] = fruits.length + 1;
               console.log("at End of create");
               fruits.push({...newFruit});
+              console.log(fruits);
               return new Fruit(newFruit)
         }
     };
