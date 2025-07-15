@@ -31,6 +31,7 @@ class Fruit {
               throw "The fruit already exists.";
         } else {
               newFruit["id"] = fruits.length + 1;
+              console.log("at End of create");
               fruits.push({...newFruit});
               return new Fruit(newFruit)
         }
