@@ -31,9 +31,10 @@ class Fruit {
               throw "The fruit already exists.";
         } else {
               newFruit["id"] = fruits.length + 1;
-              console.log("at End of create");
+              newFruit["nutritions"] = {
+                  calories: data.calories
+              }
               fruits.push({...newFruit});
-              console.log(fruits);
               return new Fruit(newFruit)
         }
     };
