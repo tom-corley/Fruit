@@ -32,7 +32,7 @@ class Fruit {
         } else {
               newFruit["id"] = fruits.length + 1;
               newFruit["nutritions"] = {
-                  calories: data.calories
+                  calories: parseInt(data.calories)
               }
               fruits.push({...newFruit});
               return new Fruit(newFruit)
