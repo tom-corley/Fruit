@@ -25,14 +25,17 @@ class Fruit {
     }
 
     static create(data) {
-        const newFruit = data;
+        const newFruit = new Fruit(data);
+        console.log(object);;
         const fruit = fruits.find((fruit) => fruit.name.toLowerCase() == data.name.toLowerCase());
   
           if (fruit) {
+              console.log(fruits);
               throw "The fruit already exists.";
           } else {
               newFruit["id"] = fruits.length + 1;
               fruits.push(newFruit);
+              console.log(fruits);
         
               return new Fruit(newFruit)
           }
@@ -60,6 +63,10 @@ class Fruit {
           throw "Quote not found";
         }
     };
+
+    static printfruits() { 
+        return fruits.map(fruit => fruit.name).join(", ");
+    }
 }
 
 module.exports = Fruit;
