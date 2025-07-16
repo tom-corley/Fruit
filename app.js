@@ -11,6 +11,8 @@ app.use(express.json());
 // Logs all requests to terminal
 app.use((req, res, next) => {
     console.log(`${req.method} - ${req.url}`)
+    console.log('Headers:', req.headers);
+    console.log('Body:', req.body);
     next()
 })
 
