@@ -2,7 +2,6 @@ const Fruit = require("../models/fruitModel");
 
 const index = (req, res) => {
     try {
-        console.log("Here");
         const fruits = Fruit.showAll();
         res.status(200).send(fruits);
     } catch(err) {
